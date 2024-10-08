@@ -1,0 +1,133 @@
+\documentclass[]{scrartcl}
+\usepackage[most]{tcolorbox}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{center}
+	\vspace*{\fill}
+	\Huge{Likelihood Free Bayesian Adaptive Estimation}
+	
+	\vspace{2cm}
+	
+	\LARGE{Jyväskylän yliopisto}\\
+
+	\LARGE{Musiikin, taiteen ja kulttuurin tutkimuksen laitos}\\
+	
+	\vspace{0.25cm}
+	
+	\LARGE{Pro Gradu -tutkielma}\\
+
+	\LARGE{2025}
+
+	
+	
+	\vspace*{\fill}
+\end{center}
+
+\begin{minipage}{0.7\linewidth}
+	\hspace{2.3in}
+	\includegraphics[width=1in]{jyulogo.png}
+\end{minipage}
+\begin{minipage}{0.3\linewidth}
+	\begin{flushright}
+		Joni Pääkkö\\
+		Musiikkitiede \\
+		Marc Thompson
+	\end{flushright}
+\end{minipage}
+	
+\newpage
+
+\tcbset{size=fbox,
+	sharp corners,
+	colframe=black,
+	colback=white,
+	boxrule=1.0pt,
+	colbacktitle=white,
+	fonttitle=\bfseries\color{black}}
+\begin{tcbitemize}[
+	raster equal height,raster force size=false,
+	raster equal skip=0pt,raster column skip=0mm,raster columns=1]
+	\tcbitem[width=1.0\linewidth]
+	\textbf{Työn tekijä}\\
+	Joni Pääkkö
+\end{tcbitemize}
+
+\begin{tcbitemize}[
+	raster equal height,raster force size=false,
+	raster equal skip=0pt,raster column skip=0mm,raster columns=1]
+	\tcbitem[width=1.0\linewidth]
+	\textbf{Työn otsikko}\\
+	Likelihood Free Bayesian Adaptive Estimation
+\end{tcbitemize}
+
+\begin{tcbitemize}[
+	raster equal height,raster force size=false,
+	raster equal skip=0pt,raster column skip=0mm,raster columns=2]
+	\tcbitem[width=0.5\linewidth]
+	\textbf{Oppiaine}\\
+	Musiikkitiede
+	\tcbitem[width=0.5\linewidth]
+	\textbf{Työn laji}\\
+	Pro Gradu -tutkielma
+\end{tcbitemize}
+
+\begin{tcbitemize}[
+	raster equal height,raster force size=true,
+	raster equal skip=0pt,raster column skip=0mm,raster columns=2]
+	\tcbitem[width=0.5\linewidth]
+	\textbf{Aika}\\
+	5.5.2025
+	\tcbitem[width=0.5\linewidth]
+	\textbf{Sivumäärä}\\
+	85
+\end{tcbitemize}
+
+\begin{tcbitemize}[
+	raster equal height,raster force size=false,
+	raster equal skip=0pt,raster column skip=0mm,raster columns=1]
+	\tcbitem[width=\linewidth]
+	\textbf{Tiivistelmä}\\
+	
+	The most popular framework for formalizing adaptive testing -- at least in psychophysics -- is based on Bayesian statistics and information theory. This framework is usually employed in the context of models that, first of all, contain a likelihood function that can be evaluated in closed form and, secondly, in which responses are discrete (e.g. correct/incorrect).
+	\\ \\
+	This thesis generalizes the Bayesian adaptive framework to models which lack likelihood function that could be evaluated in closed form due to either its complexity or computational cost.
+	\\ \\
+	This more general framework can, at least in theory, be applied to a large collection of statistical models: to most, if not all, models used in psychology and related fields. This includes models in which responses are continuous, such as reaction times or ratings on a continuous scale -- these kinds of models have presented a challenge for adaptive testing in the past, despite being widely used in cognitive psychology. 
+	\\ \\
+	The thesis is focused on the theory of adaptive testing and does not contain any empirical research or data collection. 
+	\\ \\
+	The overarching structure can be divided in two parts, the first of which explicates and elaborates on the theory of adaptive testing and lays out the mathematical foundations of the titular likelihood free adaptive testing. Second part consists of numerical simulations which are used to evaluate the effectiveness of the proposed adaptive framework and to show how to practically apply it to multiple experimental paradigms that are of relevance for empirical musicological research.
+	
+\end{tcbitemize}
+
+\vspace{-0.25cm}
+
+\begin{tcolorbox}
+	\textbf{Asiasanat}\\
+	Adaptive testing, Bayesian statistics, Experimental Design
+\end{tcolorbox}
+
+\vspace{-0.5cm}
+
+\begin{tcolorbox}
+	\textbf{Säilytyspaikka}\\
+	Jyväskylän Yliopiston kirjasto
+\end{tcolorbox}
+
+
+\newpage
+
+\tableofcontents
+
+\include{Parts/Introduction/introduction.tex}
+
+\include{Parts/TheoreticalBackground/theoreticalBackground.tex}
+
+\include{Parts/Simulations/simulations.tex}
+
+\include{Parts/Conclusion/conclusion.tex}
+
+\end{document}
